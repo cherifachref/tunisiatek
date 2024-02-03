@@ -479,7 +479,7 @@ ul {
     gap: 20px;
 }
 .flex-home .flex div {
-    min-width: 310px;
+    min-width: 250px;
     flex: 1;
 }
 @media (max-width: 767px) {
