@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tunisiatek</title>
+    <!-- render all elements more consistently -->
+    <link rel="stylesheet" href="css/normalize.css">
+     <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- bootstrap 5.3 styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- main styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="overflow">
+    <section class="overlay"></section>
+    <section class="header-nav" id="header-nav">
+        <div class="container">
+            <div class="navbar-header">
+                <span onclick="toggleSideNav()"><i class="fa-solid fa-bars fa-xl"></i></span>
+                <a href="#" class="logo"><i class="fa-solid fa-store"></i>tunisia<span>tek</span></a>
+            </div>
+            <div class="search">
+                <input type="text" name="search" id="search" placeholder="Rechercher">
+                <button><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+            </div>
+            <div class="user">
+                <span><i class="fa-regular fa-heart fa-xl"></i></span>
+                <span><i class="fa-regular fa-user fa-xl"></i></span>
+                <span><i class="fa-solid fa-cart-shopping fa-xl"></i></span>
+            </div>
+        </div>
+    </section>
+    <section class="topmenu">
+        <div class="container">
+            <ul>
+                <!-- list Informatique -->
+                <li>
+                    <a href="#" class="informatique">Informatique</a>
+                    <div class="megamenu">
+                        <ul class="links">
+                            <li><a href="#" class="active">Ordinateur Portable</a></li>
+                            <li><a href="#">Pc Portable</a></li>
+                            <li><a href="#">Pc Portable Gamer</a></li>
+                            <li><a href="#">Pc Portable Pro</a></li>
+                            <li><a href="#" class="active">Accessoires et Périphériques</a></li>
+                            <li><a href="#">Casque & Écouteurs</a></li>
+                            <li><a href="#">Sacoche & Sac À Dos</a></li>
+                            <li><a href="#">Souris</a></li>
+                            <li><a href="#">Claviers</a></li>
+                            <li><a href="#">Ensemble Clavier Et Souris</a></li>
+                            <li><a href="#">Tapis De Souris</a></li>
+                            <li><a href="#">Refroidisseur</a></li>
+                            <li><a href="#">Lecteur De Cartes & Hub USB</a></li>
+                            <li><a href="#">Webcam</a></li>
+                        </ul>
+                        <ul class="links">
+                            <li><a href="#" class="active">Ordinateur de Bureau</a></li>
+                            <li><a href="#">Ecran</a></li>
+                            <li><a href="#">Pc De Bureau</a></li>
+                            <li><a href="#">Pc De Bureau Gamer</a></li>
+                            <li><a href="#">Pc Tout En Un</a></li>
+                            <li><a href="#">Full Setup Gamer</a></li>
+                            <li><a href="#" class="active">Logiciels</a></li>
+                            <li><a href="#">Sécurité</a></li>
+                            <li><a href="#">Microsoft</a></li>
+                            <li><a href="#" class="active">Serveur informatique</a></li>
+                            <li><a href="#" class="active">Onduleur</a></li>
+                            <li><a href="#" class="active">Meubles Pc</a></li>
+                        </ul>
+                        <ul class="links">
+                            <li><a href="#" class="active">Composant Informatique</a></li>
+                            <li><a href="#">Afficheur</a></li>
+                            <li><a href="#">Ventilateur & Refroidisseur</a></li>
+                            <li><a href="#">Processeur</a></li>
+                            <li><a href="#">Barrette Mémoire</a></li>
+                            <li><a href="#">Carte Mère</a></li>
+                            <li><a href="#">Carte Graphique</a></li>
+                            <li><a href="#">Clavier Pour Pc Portable</a></li>
+                            <li><a href="#">Batterie Pour Pc Portable</a></li>
+                            <li><a href="#">Chargeur Pour Pc Portable</a></li>
+                            <li><a href="#">Boîte D'alimentation</a></li>
+                            <li><a href="#">Boîtier</a></li>
+                            <li><a href="#">Lecteur & Graveur</a></li>
+                            <li><a href="#">Divers</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <!-- list Téléphonie & Tablette -->
+                <li>
+                    <a href="#" class="telephonie-tablette">Téléphonie & Tablette</a>
+                    <div class="megamenu">
+                        <ul class="links">
+                            <li><a href="#" class="active">Téléphone Portable</a></li>
+                            <li><a href="#" class="active">Smartphone</a></li>
+                            <li><a href="#" class="active">Téléphone Fixe</a></li>
+                        </ul>
+                        <ul class="links">
+                            <li><a href="#" class="active">Tablette tactile</a></li>
+                            <li><a href="#">Tablette</a></li>
+                            <li><a href="#">Tablette Graphique</a></li>
+                            <li><a href="#">Etui De Protection Pour Tablette</a></li>
+                            <li><a href="#">Chargeur Et Câble Pour Tablette</a></li>
+                            <li><a href="#">Film De Protection Pour Tablette</a></li>
+                            <li><a href="#">Divers Pour Tablette</a></li>
+                        </ul>
+                        <ul class="links">
+                            <li><a href="#" class="active">Accessoires Téléphones</a></li>
+                            <li><a href="#">Etui De Protection Pour Téléphones</a></li>
+                            <li><a href="#">Film De Protection Pour Smartphones</a></li>
+                            <li><a href="#">Chargeurs Et Câbles Pour Téléphones</a></li>
+                            <li><a href="#">Power Bank</a></li>
+                            <li><a href="#">Divers Pour Téléphones</a></li>
+                            <li><a href="#" class="active">SmartWatch</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <!-- list Stockage -->
+                    <a href="#" class="stockage">Stockage</a>
+                    <div class="megamenu">
+                        <ul class="links">
+                            <li><a href="#" class="active">Disques Internes</a></li>
+                            <li><a href="#">Disques Internes Standards</a></li>
+                            <li><a href="#">Disque SSD</a></li>
+                            <li><a href="#">Disques Internes Pour Serveur De Stockage</a></li>
+                            <li><a href="#">Disques Internes Pour Vidéosurveillance</a></li>
+                        </ul>
+                        <ul class="links">
+                            <li><a href="#" class="active">Disque Dur externe</a></li>
+                            <li><a href="#" class="active">Serveur de stockage</a></li>
+                            <li><a href="#" class="active">Accessoires pour Stockage</a></li>
+                        </ul>
+                        <ul class="links">
+                            <li><a href="#" class="active">Clé USB</a></li>
+                            <li><a href="#" class="active">Carte mémoire</a></li>
+                            <li><a href="#" class="active">CD et DVD Vierge</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <!-- list Impression -->
+                    <a href="#" class="impression">Impression</a>
+                    <div class="megamenu">
+                        <ul class="links">
+                            <li><a href="#" class="active">Imprimantes</a></li>
+                            <li><a href="#">Imprimante À Réservoir Intégré</a></li>
+                            <li><a href="#">Imprimante Et Multifonction Jet D'encre</a></li>
+                            <li><a href="#">Imprimante Et Multifonction Laser</a></li>
+                            <li><a href="#">Imprimante Professionnelle</a></li>
+                            <li><a href="#">Imprimante Point De Vente</a></li>
+                            <li><a href="#">Accessoires Imprimantes</a></li>
+                            <li><a href="#" class="active">Fax</a></li>
+                            <li><a href="#" class="active">Scanners</a></li>
+                        </ul>
+                        <ul class="links">
+                            <li><a href="#" class="active">Photocopieurs</a></li>
+                            <li><a href="#">Photocopieurs A4 | A3</a></li>
+                            <li><a href="#">Accessoires Photocopieurs</a></li>
+                            <li><a href="#" class="active">Papier</a></li>
+                            <li><a href="#">Papier A4</a></li>
+                            <li><a href="#">Papier A3</a></li>
+                            <li><a href="#">Enveloppe</a></li>
+                            <li><a href="#">Papier Photo</a></li>
+                        </ul>
+                        <ul class="links">
+                            <li><a href="#" class="active">Consommables</a></li>
+                            <li><a href="#">Originales</a></li>
+                            <li><a href="#">Adaptables</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <!-- list TV-Son-Photos -->
+                    <a href="#" class="tv-son-photos">TV-Son-Photos</a>
+                    <div class="megamenu">
+                        <ul class="links">
+                            <li><a href="#" class="active">Montres</a></li>
+                            <li><a href="#">Vidéoprojecteurs</a></li>
+                            <li><a href="#">Vidéoprojecteurs</a></li>
+                            <li><a href="#">Accessoires Pour Vidéoprojecteurs</a></li>
+                            <li><a href="#">Consoles & Jeux</a></li>
+                            <li><a href="#">Consoles</a></li>
+                            <li><a href="#">Manettes De Jeux</a></li>
+                            <li><a href="#" class="active">Accessoires Pour Cônsoles</a></li>
+                        </ul>
+                        <ul class="links">
+                            <li><a href="#" class="active">Téléviseurs</a></li>
+                            <li><a href="#">Téléviseurs</a></li>
+                            <li><a href="#">Accessoires Pour Téléviseurs</a></li>
+                            <li><a href="#" class="active">Récepteur / Abonnement</a></li>
+                            <li><a href="#">Récepteur</a></li>
+                            <li><a href="#">Accessoires Pour Récepteurs</a></li>
+                            <li><a href="#">Abonnement Récepteur</a></li>
+                            <li><a href="#">Papier Photo</a></li>
+                        </ul>
+                        <ul class="links">
+                            <li><a href="#" class="active">Instrument de musique</a></li>
+                            <li><a href="#">Appareils Photos</a></li>
+                            <li><a href="#">Appareils Photos</a></li>
+                            <li><a href="#">Accessoires Pour Appareils Photos</a></li>
+                            <li><a href="#">Piles et Chargeurs</a></li>
+                            <li><a href="#">Piles</a></li>
+                            <li><a href="#">Chargeurs</a></li>
+                            <li><a href="#">Torches</a></li>
+                        </ul>
+                        <ul class="links">
+                            <li><a href="#" class="active">SON</a></li>
+                            <li><a href="#">Ensemble Home Cinéma</a></li>
+                            <li><a href="#">Barre De Son</a></li>
+                            <li><a href="#">Casque & Écouteurs</a></li>
+                            <li><a href="#">Haut-Parleur</a></li>
+                            <li><a href="#">Radio - Réveil</a></li>
+                            <li><a href="#">Chaîne Stéréo</a></li>
+                            <li><a href="#">Microphone</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="side-nav">
+        <div class="nav">
+            <div class="categorie">
+                <p>GATEGORIE</p>
+                <span onclick="toggleSideNav()"><i class="fa-solid fa-xmark fa"></i></span>
+            </div>
+            <div class="list">
+                <ul>
+                    <li>
+                        <a href="#" onclick="openList(event)" class="active">Informatique<i class="fa-solid fa-angle-right"></i></a>
+                        <ul class="nest-list">
+                            <li><a href="#" class="active">Ordinateur Portable</a></li>
+                            <li><a href="#">Pc Portable</a></li>
+                            <li><a href="#">Pc Portable Gamer</a></li>
+                            <li><a href="#">Pc Portable Pro</a></li>
+                            <li><a href="#" class="active">Accessoires et Périphériques</a></li>
+                            <li><a href="#">Casque & Écouteurs</a></li>
+                            <li><a href="#">Sacoche & Sac À Dos</a></li>
+                            <li><a href="#">Souris</a></li>
+                            <li><a href="#">Claviers</a></li>
+                            <li><a href="#">Ensemble Clavier Et Souris</a></li>
+                            <li><a href="#">Tapis De Souris</a></li>
+                            <li><a href="#">Refroidisseur</a></li>
+                            <li><a href="#">Lecteur De Cartes & Hub USB</a></li>
+                            <li><a href="#">Accessoires Ecran</a></li>
+                            <li><a href="#">Station D'accueil</a></li>
+                            <li><a href="#">Webcam</a></li>
+                            <li><a href="#" class="active">Ordinateur de Bureau</a></li>
+                            <li><a href="#">Ecran</a></li>
+                            <li><a href="#">Pc De Bureau</a></li>
+                            <li><a href="#">Pc De Bureau Gamer</a></li>
+                            <li><a href="#">Pc Tout En Un</a></li>
+                            <li><a href="#">Full Setup Gamer</a></li>
+                            <li><a href="#" class="active">Logiciels</a></li>
+                            <li><a href="#">Sécurité</a></li>
+                            <li><a href="#">Microsoft</a></li>
+                            <li><a href="#" class="active">Serveur informatique</a></li>
+                            <li><a href="#" class="active">Onduleur</a></li>
+                            <li><a href="#" class="active">Meubles Pc</a></li>
+                            <li><a href="#" class="active">Composant Informatique</a></li>
+                            <li><a href="#">Disque Dur Interne</a></li>
+                            <li><a href="#">Afficheur</a></li>
+                            <li><a href="#">Ventilateur & Refroidisseur</a></li>
+                            <li><a href="#">Processeur</a></li>
+                            <li><a href="#">Barrette Mémoire</a></li>
+                            <li><a href="#">Carte Mère</a></li>
+                            <li><a href="#">Carte Graphique</a></li>
+                            <li><a href="#">Clavier Pour Pc Portable</a></li>
+                            <li><a href="#">Batterie Pour Pc Portable</a></li>
+                            <li><a href="#">Chargeur Pour Pc Portable</a></li>
+                            <li><a href="#">Boîte D'alimentation</a></li>
+                            <li><a href="#">Boîtier</a></li>
+                            <li><a href="#">Lecteur & Graveur</a></li>
+                            <li><a href="#">Divers</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" onclick="openList(event)" class="active">Téléphonie & Tablette<i class="fa-solid fa-angle-right"></i></a>
+                        <ul class="nest-list">
+                            <li><a href="#" class="active">Téléphone Portable</a></li>
+                            <li><a href="#" class="active">Smartphone</a></li>
+                            <li><a href="#" class="active">Téléphone Fixe</a></li>
+                            <li><a href="#" class="active">Tablette tactile</a></li>
+                            <li><a href="#">Tablette</a></li>
+                            <li><a href="#">Tablette tactile</a></li>
+                            <li><a href="#">Tablette Graphique</a></li>
+                            <li><a href="#">Etui De Protection Pour Tablette</a></li>
+                            <li><a href="#">Chargeur Et Câble Pour Tablette</a></li>
+                            <li><a href="#">Film De Protection Pour Tablette</a></li>
+                            <li><a href="#">Divers Pour Tablette</a></li>
+                            <li><a href="#" class="active">Accessoires Téléphones</a></li>
+                            <li><a href="#">Etui De Protection Pour Téléphones</a></li>
+                            <li><a href="#">Film De Protection Pour Smartphones</a></li>
+                            <li><a href="#">Chargeurs Et Câbles Pour Téléphones</a></li>
+                            <li><a href="#">Power Bank</a></li>
+                            <li><a href="#">Divers Pour Téléphones</a></li>
+                            <li><a href="#" class="active">SmartWatch</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" onclick="openList(event)" class="active">Stockage<i class="fa-solid fa-angle-right"></i></a>
+                        <ul class="nest-list">
+                            <li><a href="#" class="active">Disques Internes</a></li>
+                            <li><a href="#">Disques Internes Standards</a></li>
+                            <li><a href="#">Disque SSD</a></li>
+                            <li><a href="#">Disques Internes Pour Serveur De Stockage</a></li>
+                            <li><a href="#">Disques Internes Pour Vidéosurveillance</a></li>
+                            <li><a href="#" class="active">Disque Dur externe</a></li>
+                            <li><a href="#" class="active">Serveur de stockage</a></li>
+                            <li><a href="#" class="active">Accessoires pour Stockage</a></li>
+                            <li><a href="#" class="active">Clé USB</a></li>
+                            <li><a href="#" class="active">Carte mémoire</a></li>
+                            <li><a href="#" class="active">CD et DVD Vierge</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" onclick="openList(event)" class="active">Impression<i class="fa-solid fa-angle-right"></i></a>
+                        <ul class="nest-list">
+                            <li><a href="#" class="active">Imprimantes</a></li>
+                            <li><a href="#">Imprimante À Réservoir Intégré</a></li>
+                            <li><a href="#">Imprimante Et Multifonction Jet D'encre</a></li>
+                            <li><a href="#">Imprimante Et Multifonction Laser</a></li>
+                            <li><a href="#">Imprimante Professionnelle</a></li>
+                            <li><a href="#">Imprimante Professionnelle</a></li>
+                            <li><a href="#">Accessoires Imprimantes</a></li>
+                            <li><a href="#" class="active">Fax</a></li>
+                            <li><a href="#" class="active">Scanners</a></li>
+                            <li><a href="#" class="active">Photocopieurs</a></li>
+                            <li><a href="#">Photocopieurs A4 | A3</a></li>
+                            <li><a href="#">Accessoires Photocopieurs</a></li>
+                            <li><a href="#" class="active">Papier</a></li>
+                            <li><a href="#">Papier A4</a></li>
+                            <li><a href="#">Papier A3</a></li>
+                            <li><a href="#">Enveloppe</a></li>
+                            <li><a href="#">Papier Photo</a></li>
+                            <li><a href="#" class="active">Consommables</a></li>
+                            <li><a href="#">Originales</a></li>
+                            <li><a href="#">Adaptables</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" onclick="openList(event)" class="active">TV-Son-Photos<i class="fa-solid fa-angle-right"></i></a>
+                        <ul class="nest-list">
+                            <li><a href="#" class="active">Montres</a></li>
+                            <li><a href="#" class="active">Vidéoprojecteurs</a></li>
+                            <li><a href="#">Vidéoprojecteurs</a></li>
+                            <li><a href="#">Accessoires Pour Vidéoprojecteurs</a></li>
+                            <li><a href="#" class="active">Consoles & Jeux</a></li>
+                            <li><a href="#">Consoles</a></li>
+                            <li><a href="#">Manettes De Jeux</a></li>
+                            <li><a href="#">Accessoires Pour Cônsoles</a></li>
+                            <li><a href="#" class="active">Téléviseurs</a></li>
+                            <li><a href="#">Téléviseurs</a></li>
+                            <li><a href="#">Accessoires Pour Téléviseurs</a></li>
+                            <li><a href="#" class="active">Récepteur / Abonnement</a></li>
+                            <li><a href="#">Récepteur</a></li>
+                            <li><a href="#">Accessoires Pour Récepteurs</a></li>
+                            <li><a href="#">Abonnement Récepteur</a></li>
+                            <li><a href="#" class="active">Instrument de musique</a></li>
+                            <li><a href="#" class="active">Appareils Photos</a></li>
+                            <li><a href="#">Appareils Photos</a></li>
+                            <li><a href="#">Accessoires Pour Appareils Photos</a></li>
+                            <li><a href="#" class="active">Piles et Chargeurs</a></li>
+                            <li><a href="#">Piles</a></li>
+                            <li><a href="#">Chargeurs</a></li>
+                            <li><a href="#">Torches</a></li>
+                            <li><a href="#" class="active">SON</a></li>
+                            <li><a href="#">Ensemble Home Cinéma</a></li>
+                            <li><a href="#">Barre De Son</a></li>
+                            <li><a href="#">Casque & Écouteur</a></li>
+                            <li><a href="#">Haut-Parleur</a></li>
+                            <li><a href="#">Radio - Réveil</a></li>
+                            <li><a href="#">Chaîne Stéréo</a></li>
+                            <li><a href="#">Microphone</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="main">
+        <div class="container">
+            <div id="myCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="./images/cover1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="./images/cover2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="./images/cover3.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="flex-home">
+        <div class="container">
+            <div class="flex">
+                <div>
+                    <img src="./images/flex1.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./images/flex2.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./images/flex3.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./images/flex4.png" alt="">
+                </div>
+                <div>
+                    <img src="./images/flex5.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./images/flex6.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./images/flex7.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./images/flex8.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="logo-slider">
+        <div class="container">
+            <div class="logo">
+                <div>
+                    <img src="./images/logo1.png" alt="">
+                </div>
+                <div>
+                    <img src="./images/logo2.png" alt="">
+                </div>
+                <div>
+                    <img src="./images/logo3.png" alt="">
+                </div>
+                <div>
+                    <img src="./images/logo4.png" alt="">
+                </div>
+                <div>
+                    <img src="./images/logo5.png" alt="">
+                </div>
+                <div>
+                    <img src="./images/logo6.png" alt="">
+                </div>
+                <div>
+                    <img src="./images/logo7.png" alt="">
+                </div>
+                <div>
+                    <img src="./images/logo8.png" alt="">
+                </div>
+                <div>
+                    <img src="./images/logo9.png" alt="">
+                </div>
+                <div>
+                    <img src="./images/logo1.png" alt="">
+                </div>
+                <div>
+                    <img src="./images/logo2.png" alt="">
+                </div>
+                <div>
+                    <img src="./images/logo3.png" alt="">
+                </div>
+                <div>
+                    <img src="./images/logo4.png" alt="">
+                </div>
+                <div>
+                    <img src="./images/logo5.png" alt="">
+                </div>
+                <div>
+                    <img src="./images/logo6.png" alt="">
+                </div>
+                <div>
+                    <img src="./images/logo7.png" alt="">
+                </div>
+                <div>
+                    <img src="./images/logo8.png" alt="">
+                </div>
+                <div>
+                    <img src="./images/logo9.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="container">
+            <div class="media">
+                <span><i class="fa-brands fa-facebook-f fa-xl"></i></span>
+                <span><i class="fa-brands fa-twitter fa-xl"></i></span>
+                <span><i class="fa-brands fa-youtube fa-xl"></i></span>
+                <span><i class="fa-brands fa-pinterest-p fa-xl"></i></span>
+                <span><i class="fa-brands fa-instagram fa-xl"></i></span>
+                <span><i class="fa-brands fa-linkedin-in fa-xl"></i></span>
+            </div>
+            <div class="reassurance">
+                <div>
+                    <div>
+                        <img src="./images/reas1.png" alt="">
+                        <p>Paiement en 12 fois</p>
+                    </div>
+                    <div>
+                        <img src="./images/reas2.png" alt="">
+                        <p>Livraison en 24h (**) Hors confinement</p>
+                    </div>
+                    <div>
+                        <img src="./images/reas3.png" alt="">
+                        <p>Ouvert tous les jours de 8h00 à 19h00</p>
+                    </div>
+                    <div>
+                        <img src="./images/reas4.png" alt="">
+                        <p>Contactez-nous au <br>+216 22 40 27 27</p>
+                    </div>
+                </div>
+                <div>
+                    <p>(**) Livraison sur le grand Tunis & Commande passée avant 14h sinon le lendemain matin</p>
+                </div>
+            </div>
+            <div class="contact">
+                <div>
+                    <h4>NOTRE SOCIÉTÉ</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-angle-right fa-xs"></i> Contactez-nous</li>
+                        <li><i class="fa-solid fa-angle-right fa-xs"></i> A propos</li>
+                        <li><i class="fa-solid fa-angle-right fa-xs"></i> Nos Magasins</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>INFORMATIONS LÉGALES</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-angle-right fa-xs"></i> Livraison</li>
+                        <li><i class="fa-solid fa-angle-right fa-xs"></i> Conditions d'utilisation</li>
+                        <li><i class="fa-solid fa-angle-right fa-xs"></i> Paiement sécurisé</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>VOTRE COMPTE</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-angle-right fa-xs"></i> Informations personnelles</li>
+                        <li><i class="fa-solid fa-angle-right fa-xs"></i> Commandes</li>
+                        <li><i class="fa-solid fa-angle-right fa-xs"></i> Avoirs</li>
+                        <li><i class="fa-solid fa-angle-right fa-xs"></i> Adresses</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>CONTACT</h4>
+                    <ul>
+                        <li class="cherifdev"><span><i class="fa-solid fa-house"></i></span><span>TunisiaTek<br>99 Rue bouglada<br>Nos Magasins<br>Tunisia</span></li>
+                        <li><i class="fa-solid fa-phone-volume"></i> +216 22 40 27 27</li>
+                        <li><i class="fa-solid fa-earth-americas"></i> https://cherifdev.vercel.app/</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tunisiatek">
+                <hr><p>&copy; 2024 - TunisiaTek <span>Created By CherifDev™</span></p>
+            </div>
+        </div>
+    </section>
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
